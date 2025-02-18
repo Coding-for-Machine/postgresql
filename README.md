@@ -1,7 +1,7 @@
 # postgresql
 
 ```SQL
-CRATE TABLE users (
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
   username VARCHAR(100) UNIQUE,
   email VARCHAR(100) UNIQUE,
@@ -11,7 +11,7 @@ CRATE TABLE users (
 ```
 
 ```SQL
-CERATE TABLE IF NOT EXISTS posts (
+CREATE TABLE IF NOT EXISTS posts (
   id SERIAL PRAMARY KEY,
   title VARCHAR(100) NOT NULL,
   body TEXT NOT NULL,
@@ -21,7 +21,7 @@ CERATE TABLE IF NOT EXISTS posts (
 ```
 
 ```SQL
-CERATE TABLE tages (
+ CREATE TABLE tages (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100) UNIQUE
 );
